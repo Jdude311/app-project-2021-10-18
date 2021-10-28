@@ -1,0 +1,134 @@
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Oswald";
+  text-decoration-line: underline;
+}
+body {
+  background-color: #eee;
+}
+h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  text-decoration-line: none;
+  text-align: center;
+}
+p {
+  font-family: "Roboto";
+  font-size: 1em;
+}
+a {
+  transition: 0.1s;
+  color: #0099ff;
+}
+a:hover {
+  transition: 0.1s;
+  font-weight: bold;
+}
+.content, .blerb {
+  max-width: 40em;
+  margin: 0 auto 0 auto;
+}
+.content-section, .blerb {
+  padding: 0em 2em 0em 2em; 
+  text-align: left;
+}
+.blerb {
+  margin-bottom: 3em;
+}
+.content-section {
+  margin-bottom: 2em;
+}
+div.title-container {
+  padding: 4em 0 0 0;
+}
+.title {
+  /*text-decoration-line: underline;*/
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: 1em 0 0 0;
+}
+img, .video-container {
+	transition: all 0.1s;
+  z-index: 0;
+}
+img:hover, .video-container:hover {
+  transform: scale(1.05);
+  z-index: 0;
+}
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 2.5em;
+  overflow: hidden;
+  background-color: #282828;
+  position: fixed;
+  color: #ffffff;
+  font-family: "Oswald";
+  z-index: 100;
+  text-align: center;
+  font-size: 1em;
+}
+nav.navbar-links-container ul, nav.navbar-title-container ul, li.navbar-item {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+nav.navbar-title-container {
+  float: left;
+  background-color: #666666;
+  height: 100%;
+  padding: 0.5em 1.0em 0.5em 1.0em;
+}
+li.navbar-title {
+  font-weight: 600;
+  text-decoration-line: underline;
+}
+
+nav.navbar-links-container {
+  float: right;
+  /*margin-top: -0.5em;*/
+  height: 100%;
+  margin-right: 0.5em;
+  padding: 0.5em 0em 0.5em 0em;
+}
+nav.navbar-links-container li + li:before {
+  content: " | ";
+}
+li.navbar-item {
+  height: 100%;
+}
+li.navbar-item a {
+  color: #ffffff;
+  font-weight: normal;
+  text-decoration-line: none;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+li.navbar-item a:hover {
+  transition: 0.1s;
+  /*color: #0099ff;*/
+  background-color: #666666;
+}
